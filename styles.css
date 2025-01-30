@@ -126,36 +126,42 @@ h1 {
     background: #dcdcdc;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .menu {
-        display: none;
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
         flex-direction: column;
-        background: #004080;
-        position: absolute;
-        top: 50px;
-        right: 0;
+        align-items: flex-start;
+    }
+    .menu {
+        width: 50%;
+    }
+    .logo {
+        max-height: 70px; /* Adjust the logo size for smaller screens */
+    }
+    .right-logo{
+        max-height: 70px;
+        align-items: inherit;
+        max-width: 10px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu {
         width: 100%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+    .logo {
+        max-height: 80px; /* Adjust the logo size for tablets */
+    }
+}
 
-    .menu li {
-        padding: 10px;
-        text-align: center;
-        margin: 0;
-    }
-
-    .menu a {
-        padding: 10px;
-    }
-
-    .menu.show {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
+/* Large devices (desktops, 768px and up) */
+@media only screen and (min-width: 769px) {
+    /* No changes needed for desktops */
 }
 
 /* Form Container Styles */
