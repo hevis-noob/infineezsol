@@ -125,24 +125,6 @@ h1 {
     background: #dcdcdc;
 }
 
-/* Small devices (phones, 600px and down) */
-@media only screen and (max-width: 500px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .menu {
-        width: 100%; /* Full width for better alignment */
-    }
-    .logo {
-        max-height: 70px; /* Adjust the logo size for smaller screens */
-    }
-    .right-logo {
-        max-height: 70px;
-        max-width: 70px; /* Ensure proportional resizing */
-    }
-}
 
 /* Medium devices (tablets, 600px to 768px) */
 @media only screen and (max-width: 768px) {
