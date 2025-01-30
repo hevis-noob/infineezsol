@@ -23,19 +23,22 @@ header {
     color: #7c3030;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(247, 245, 245, 0.1);
-    min-height: 100px;
+    height: 100px; /* Set a fixed height for the header */
 }
 
 .logo {
     display: flex;
-    width: 20%; /* Use percentage for responsiveness */
-    height: auto; /* Maintain aspect ratio */
-    
+    height: 100%; /* Make the logo height fit the header */
+    width: auto; /* Maintain aspect ratio */
+    border: 2px solid #7c3030; /* Add border */
+    box-sizing: border-box; /* Ensure border is included in width/height */
 }
 
-.right-logo{
-    width: auto; /* Use percentage for responsiveness */
-    height: auto; /* Maintain aspect ratio */
+.right-logo {
+    height: 100%; /* Make the right logo height fit the header */
+    width: auto; /* Maintain aspect ratio */
+    border: 2px solid #7c3030; /* Add border */
+    box-sizing: border-box; /* Ensure border is included in width/height */
 }
 
 nav {
@@ -86,6 +89,40 @@ h1 {
     color: #7c3030;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo, .right-logo {
+        width: 30%;
+    }
+
+    nav {
+        width: 40%;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu li {
+        margin: 0 5px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
 /* Category Styles */
 .category-group {
     margin-bottom: 20px;
@@ -124,6 +161,7 @@ h1 {
 .subcategories p:hover {
     background: #dcdcdc;
 }
+
 
 
 
