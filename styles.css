@@ -24,25 +24,23 @@ header {
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(247, 245, 245, 0.1);
     min-height: 100px;
-    max-height: 100px;
-    
 }
 
 .logo {
-    width: 250px;
-    height: 250px;
+    width: 20%; /* Use percentage for responsiveness */
+    height: auto; /* Maintain aspect ratio */
     object-fit: contain;
 }
 
 .right-logo{
-    width: 400px;
-    height: 400px;
+    width: 25%; /* Use percentage for responsiveness */
+    height: auto; /* Maintain aspect ratio */
 }
 
 nav {
     display: flex;
     align-items: center;
-    flex-grow: 1; /* Allow nav to grow and fill available space */
+    flex-grow: 1;
     justify-content: center;
 }
 
@@ -134,15 +132,14 @@ h1 {
         flex-wrap: wrap;
     }
     .menu {
-        width: 50%;
+        width: 100%; /* Full width for better alignment */
     }
     .logo {
         max-height: 70px; /* Adjust the logo size for smaller screens */
     }
-    .right-logo{
+    .right-logo {
         max-height: 70px;
-        align-items: inherit;
-        max-width: 10px;
+        max-width: 70px; /* Ensure proportional resizing */
     }
 }
 
@@ -153,7 +150,7 @@ h1 {
         align-items: flex-start;
     }
     .menu {
-        width: 100%;
+        width: 100%; /* Full width for better alignment */
     }
     .logo {
         max-height: 80px; /* Adjust the logo size for tablets */
@@ -167,16 +164,9 @@ h1 {
 
 /* Form Container Styles */
 .form-container {
-    width: 100%;
-    margin: 20px auto;
-    padding: 50px;
-}
-
-/* Form Container Styles */
-.form-container {
     width: 80%;
     max-width: 800px;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -190,4 +180,3 @@ h1 {
     border: none;
     border-radius: 10px;
 }
-
