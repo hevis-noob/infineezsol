@@ -167,12 +167,21 @@ h1 {
 
 /* Form Container Styles */
 .form-container {
-    width: auto;
+    width: 100%;
     margin: 20px auto;
     padding: 50px;
-    background-color: #ffc000;
-    border-radius: 50px;
+}
+
+/* Form Container Styles */
+.form-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Ensure text aligns to the left */
 }
 
 .form-container iframe {
@@ -181,3 +190,4 @@ h1 {
     border: none;
     border-radius: 10px;
 }
+
