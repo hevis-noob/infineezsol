@@ -10,4 +10,13 @@ function toggleSubmenu(id) {
         element.style.display = "block";
     }
 }
+
+document.getElementById("hamburger-icon").addEventListener("click", function() {
+    const menu = document.getElementById("menu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+});
                 

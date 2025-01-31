@@ -20,6 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #a9a9a9;
+    position: relative;
     color: #7c3030;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(247, 245, 245, 0.1);
@@ -74,6 +75,49 @@ nav {
     font-size: 30px;
     cursor: pointer;
     color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Hide the menu on mobile */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        top : 60px;
+        right: 0;
+        background-color: #fad5a5;
+        padding: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show the hamburger icon on mobile */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        cursor: pointer;
+        font-size: 30px;
+        margin-right: 20px;
+        color: black;
+    }
+
+    /* Optionally hide logos on mobile for better space management */
+    .logo {
+        max-width: 50px;
+    }
+
+    /* Optionally, modify the links' styling on mobile */
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        color: black;
+        font-size: 18px;
+    }
 }
 
 /* Academics Page */
