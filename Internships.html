@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Infineezsolutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="topleft.png" alt="Left Logo" class="logo left-logo">
+        <div class="hamburger" id="hamburger-icon">
+            &#9776;
+        </div>
+        <nav>
+            
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Internships.html">Internships</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="topright.png" alt="Right Logo" class="logo right-logo">
+    </header>
+
+    <main>
+        <h1>Internships</h1>
+        <div class="category-group">
+            <!-- First Level: Engineering -->
+            <div class="category" onclick="toggleSubmenu('group1')">Engineering</div>
+            <div id="group1" class="subcategories">
+
+                <div class="category" onclick="toggleSubmenu('subgroup1')">CSE/IT/ISE</div>
+                <div id="subgroup1" class="subcategories">
+                    <p>Fullstack java</p>
+                    <p>Machine Learning</p>
+                    <p>Internet of Things(IoT)</p>
+                    <p>Cloud Computing</p>
+                    <p>Artificial Intelligence</p>
+                </div>
+
+                <div class="category" onclick="toggleSubmenu('subgroup2')">EEE</div>
+                <div id="subgroup2" class="subcategories">
+                    <p>Electric Vehicles</p>
+                    <p>Auto CAD</p>
+                    <p>Industrial Automation</p>
+                    <p>Substation Design</p>
+                    <p>Solar Plant Design</p>
+                    <p>Smart Grid & itr Applications</p>
+                </div>
+
+                <div class="category" onclick="toggleSubmenu('subgroup3')">ECE</div>
+                <div id="subgroup3" class="subcategories">
+                    <p>Embedded Systems</p>
+                    <p>PCB Design</p>
+                    <p>VLSI</p>
+                    <p>Internet of Things(IoT)</p>
+                </div>
+
+                <div class="category" onclick="toggleSubmenu('subgroup4')">Civil Engineering</div>
+                <div id="subgroup4" class="subcategories">
+                    <p>Building Planning with Auto CAD</p>
+                    <p>Structural Analysis & Design using STAAD PRO</p>
+                    <p>Revit Architecture</p>
+                    <p>Design of Building using ETABS</p>
+                </div>
+
+                <div class="category" onclick="toggleSubmenu('subgroup5')">Mechanical / Aeronautical / Automobile Engineering</div>
+                <div id="subgroup5" class="subcategories">
+                    <p>Electric Vehicles</p>
+                    <p>3D Printing & Design</p>
+                    <p>Drine Technology</p>
+                    <p>Product Design</p>
+                    <p>Solid Works</p>
+                    <p>CATIA</p>
+                    <p>ANSYS</p>
+                </div>
+
+            </div>
+
+            <!-- First Level: Degree -->
+            <div class="category" onclick="toggleSubmenu('group2')">Degree</div>
+            <div id="group2" class="subcategories">
+                <div class="category" onclick="toggleSubmenu('subgroup6')">B.Com(Computers)/BSc/BCA</div>
+                <div id="subgroup6" class="subcategories">
+                    <p>Full Stack java</p>
+                    <p>Python for Data Science</p>
+                    <p>Tally Kit</p>
+                </div>
+
+                <div class="category" onclick="toggleSubmenu('subgroup7')">BBA/BBM</div>
+                <div id="subgroup7" class="subcategories">
+                    <p>Digital Marketing</p>
+                    <p>Stock Market Management</p>
+                    <p>HR Management</p>
+                    <p>Strategic Management<p>
+                    <p>Marketing Management</p>    
+                </div>
+
+                <div class="category" onclick="toggleSubmenu('subgroup8')">BCom</div>
+                <div id="subgroup8" class="subcategories">
+                    <p>MS Office</p>
+                    <p>Tally Kit</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    
+    
+</body>
+</html>
